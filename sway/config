@@ -2,6 +2,7 @@
 set $term       alacritty
 set $launcher   tofi-run -c ~/.config/tofi.conf | xargs swaymsg exec --
 set $vim        alacritty -o 'window.padding={x=0,y=0}' -e nvim
+set $screenshot grim ~/pictures/screenshot_$(date +%d-%m-%Y_%H:%M.%S).png
 
 # Devices
 set $touchpad SynPS/2_Synaptics_TouchPad
@@ -44,6 +45,7 @@ bindsym --to-code {
     $mod+Shift+e exec 'swaymsg exit'
     $mod+f fullscreen
     $mod+v floating toggle
+    Print exec $screenshot
     #XF86MonBrightnessUp exec brightnessctl set 5%+
     #XF86MonBrightnessDown exec brightnessctl set 5%-
     $mod+tab focus right
