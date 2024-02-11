@@ -1,5 +1,9 @@
 # My dotfiles
 
+![screenshot-1](.github/screenshot-1.png)
+![screenshot-2](.github/screenshot-2.png)
+![screenshot-3](.github/screenshot-3.png)
+
 ## Summary
 - **Shell**: 
 - **Terminal emulator**: [Alacritty](https://github.com/alacritty/alacritty)
