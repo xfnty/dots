@@ -1,0 +1,74 @@
+# Alacritty: https://alacritty.org/config-alacritty.html
+# Themes:    https://github.com/eendroroy/alacritty-theme
+
+import = [
+	"~/.config/alacritty/catpuccin-macchiato.toml",
+]
+
+#shell = { program = "/bin/bash", args = [] }
+working_directory = "/home"
+live_config_reload = true
+#ipc_socket = false
+
+[window]
+padding = { x = 5, y = 5 }
+dynamic_padding = false
+#decorations = "None"
+opacity = 0.9
+blur = false
+#startup_mode = "Maximized"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+normal		= { family = "monospace", style = "Regular" }
+bold		= { family = "monospace", style = "Bold" }
+italic		= { family = "monospace", style = "Italic" }
+bold_italic	= { family = "monospace", style = "Bold Italic" }
+offset = { x = 0, y = 0 }
+size = 11.25
+
+[bell]
+#duration = 0
+
+[cursor]
+style = { shape = "Block", blinking = "Never" }
+blink_interval = 500
+blink_timeout = 0
+unfocused_hollow = true
+
+[mouse]
+#hide_when_typing = true
+
+[debug]
+#render_timer = false
+#renderer = "None"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
