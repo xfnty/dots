@@ -1,10 +1,9 @@
 # Apps
-set $term     alacritty
-set $launcher tofi-run -c ~/.config/tofi.conf | xargs swaymsg exec --
-set $vim      alacritty -o 'window.padding={x=0,y=0}' -e nvim
+set $term       alacritty
+set $launcher   tofi-run -c ~/.config/tofi.conf | xargs swaymsg exec --
+set $vim        alacritty -o 'window.padding={x=0,y=0}' -e nvim
 
 # Devices
-set $monitor  eDP-1
 set $touchpad SynPS/2_Synaptics_TouchPad
 set $mouse    SINOWEALTH_Game_Mouse
 
@@ -15,8 +14,8 @@ set $mod   Mod4
 exec waybar
 
 # Monitor
-output $monitor mode 1366x768@60Hz
-output * bg /home/.config/wallpaper-4.png fill
+output eDP-1 mode 1366x768@60Hz
+output * bg ~/.config/wallpaper.png fill
 
 # Input
 floating_modifier $mod normal
@@ -40,10 +39,10 @@ bindsym --to-code {
     $mod+w exec $term
     $mod+q kill
     $mod+s exec $launcher
-    $mod+f exec $vim
+    $mod+d exec $vim
     $mod+Shift+c reload
     $mod+Shift+e exec 'swaymsg exit'
-    #$mod+f fullscreen
+    $mod+f fullscreen
     $mod+v floating toggle
     #XF86MonBrightnessUp exec brightnessctl set 5%+
     #XF86MonBrightnessDown exec brightnessctl set 5%-
