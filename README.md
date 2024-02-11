@@ -1,20 +1,19 @@
 # My dotfiles
 
 ## Summary
-- **Operating system**: [Void Linux](https://voidlinux.org/)
-- **Libc**: [musl](https://docs.voidlinux.org/installation/musl.html)
-- **Window Manager**: [berry](https://berrywm.org/)
-- **Bar**: [polybar](https://polybar.github.io/)
-- **Hotkey Manager**: [sxhkd](https://manpages.org/sxhkd)
-- **Backlight Manager**: [xbacklight](https://www.x.org/archive/X11R7.5/doc/man/man1/xbacklight.1.html)
-- **Program Launcher**: [dmenu](https://github.com/xfnty/dmenu)
+- **Shell**: [Bash]()
+- **Terminal emulator**: [Alacritty](https://github.com/alacritty/alacritty)
+- **Editor**: [Neovim](https://neovim.io/)
+- **Window Manager**: [Sway](https://swaywm.org/)
+- **Bar**: [waybar](https://github.com/Alexays/Waybar)
+- **Launcher**: [tofi](https://github.com/philj56/tofi)
 
 ## Setting Up
-> [!WARNING]
-> - Figure out what other packages are required after the installation.
-> - Add `stow` commands
+### Installing required packages
+- On Arch linux:
+  ```bash
+  sudo pacman -S nano nvim sway waybar swaybg
+  ```
 
-```
-sudo xbps-install git stow
-cd ~ && git clone --depth 1 https://github.com/xfnty/dots
-```
+## TODO
+- Write down all the required packages
