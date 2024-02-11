@@ -1,7 +1,7 @@
 # My dotfiles
 
 ## Summary
-- **Shell**: [Bash]()
+- **Shell**: 
 - **Terminal emulator**: [Alacritty](https://github.com/alacritty/alacritty)
 - **Editor**: [Neovim](https://neovim.io/)
 - **Window Manager**: [Sway](https://swaywm.org/)
@@ -15,5 +15,13 @@
   sudo pacman -S nano nvim sway waybar swaybg
   ```
 
-## TODO
-- Write down all the required packages
+### Building from source
+- [tofi](https://github.com/philj56/tofi):
+  ```
+  sudo pacman -S freetype2 harfbuzz cairo pango wayland libxkbcommon
+  sudo pacman -S meson scdoc wayland-protocols
+  git clone --depth 1 https://github.com/philj56/tofi
+  cd tofi
+  meson build -Dbuildtype=release && ninja -C build install
+  cd ../
+  ```
