@@ -29,3 +29,12 @@
   meson build -Dbuildtype=release && ninja -C build install
   cd ../
   ```
+
+## TODO
+- Power menu
+- Refine waybar config
+- Setup audio
+- Update nvim config
+- Rice firefox
+- List all of the required packages
+
