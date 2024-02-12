@@ -1,0 +1,11 @@
+# Source: https://github.com/gokcehan/lf/blob/master/etc/lfrc.example
+
+# Flags
+set hidden true
+
+# Key bindings
+map <enter> shell
+cmd open $nano $f
+
+
+

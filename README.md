@@ -11,8 +11,18 @@
 - **Window Manager**: [Sway](https://swaywm.org/)
 - **Bar**: [waybar](https://github.com/Alexays/Waybar)
 - **Launcher**: [tofi](https://github.com/philj56/tofi)
+- **File Manager**: [lf](https://github.com/gokcehan/lf)
 
 ## Setting Up
+### First steps
+- Autologin on `tty1` (assuming the username is `main`): 
+  ```
+  unlink /run/runit/service/agetty-tty1
+  mv /etc/runit/sv/agetty-tty1 /etc/runit/sv/agetty-autologin-tty1
+  sed -i 's/GETTY_ARGS="--noclear"/GETTY_ARGS="--autologin main --noclear"/g' /etc/runit/sv/agetty-autologin-tty1
+  ln -s /etc/runit/sv/agetty-autologin-tty1 /run/runit/service
+  ```
+
 ### Installing required packages
 - On Arch linux:
   ```bash
@@ -31,8 +41,8 @@
   ```
 
 ## TODO
-- Power menu
 - Refine waybar config
+  - Power menu
 - Setup audio
 - Update nvim config
 - Rice firefox
