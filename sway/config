@@ -3,6 +3,7 @@ set $term       alacritty
 set $launcher   tofi-run -c ~/.config/tofi.conf | xargs swaymsg exec --
 set $vim        alacritty -o 'window.padding={x=0,y=0}' -e nvim
 set $screenshot grim ~/pictures/screenshot_$(date +%d-%m-%Y_%H:%M.%S).png
+set $powermenu  sh powermenu
 
 # Devices
 set $touchpad SynPS/2_Synaptics_TouchPad
@@ -46,9 +47,10 @@ bindsym --to-code {
     $mod+f fullscreen
     $mod+v floating toggle
     Print exec $screenshot
+	$mod+escape exec $powermenu
     #XF86MonBrightnessUp exec brightnessctl set 5%+
     #XF86MonBrightnessDown exec brightnessctl set 5%-
-    $mod+tab focus right
+    $mod+tab focus next
     $mod+1 workspace number 1
     $mod+2 workspace number 2
     $mod+3 workspace number 3

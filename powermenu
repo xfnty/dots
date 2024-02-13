@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Would be cool if tofi supported text centering
+option=$(echo -e "Shutdown\nReboot\nSuspend" | tofi --history=false -c ~/.config/tofi.conf)
+
+case "${option}" in
+	Shutdown ) loginctl poweroff ;;
+	Reboot   ) loginctl reboot   ;;
+	Suspend  ) loginctl suspend  ;;
+esac
