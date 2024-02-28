@@ -13,9 +13,14 @@ vim.opt.wrap = false
 --vim.opt.colorcolumn = "80"
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.mouse = ""
 
 vim.g.netrw_banner = 0
 vim.g.netrw_localcopydircmd = "cp -r"
+vim.g.netrw_list_hide = "\\./,\\.\\./"
+vim.g.netrw_hide = true
+
+vim.g.autowrite = true
 
 require("xfnty/remaps")
 require("xfnty/plugins")

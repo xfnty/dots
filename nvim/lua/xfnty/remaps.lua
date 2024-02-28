@@ -8,3 +8,6 @@ vim.keymap.set("n", "<C-y>", "\"+y")
 vim.keymap.set("v", "<C-y>", "\"+y")
 vim.keymap.set("n", "<C-Y>", "\"+Y")
 vim.keymap.set("n", "<C-h>", ":%s/\\<<C-r><C-w>\\>//g<left><left>")
+vim.keymap.set("n", "<C-s>", ":w\n")
+
+vim.keymap.set("n", "<CR>", ":!")
